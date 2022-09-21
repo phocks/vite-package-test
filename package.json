@@ -1,5 +1,5 @@
 {
-  "name": "vite-test",
+  "name": "vite-package-test",
   "type": "module",
   "files": [
     "dist"
