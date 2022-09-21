@@ -1,0 +1,46 @@
+{
+  "name": "vite-test",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/main.umd.cjs",
+  "module": "./dist/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.umd.cjs"
+    }
+  },
+  "version": "1.0.0-pre",
+  "description": "A project generated from aunty's library project template.",
+  "license": "MIT",
+  "private": true,
+  "contributors": [
+    "Joshua Byrd <phocks@gmail.com>"
+  ],
+  "aunty": {
+    "type": "library"
+  },
+  "scripts": {
+    "start": "aunty serve",
+    "test": "aunty test",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@types/jest": "^29.0.1",
+    "@types/ramda": "^0.28.15",
+    "@types/webpack-env": "^1.18.0",
+    "@vitejs/plugin-legacy": "^2.2.0",
+    "terser": "^5.15.0",
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "@abcnews/alternating-case-to-object": "^3.0.2",
+    "@abcnews/aunty": "^13.0.3",
+    "@abcnews/env-utils": "^3.0.1",
+    "@abcnews/mount-utils": "^2.0.0",
+    "ramda": "^0.28.0"
+  }
+}
