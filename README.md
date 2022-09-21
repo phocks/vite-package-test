@@ -1,3 +1,7 @@
-# New Project
+# Vite Package Test
 
-A project generated from [aunty](https://github.com/abcnews/aunty)'s `library` project template.
+Package a module for npm.
+
+## Usage
+
+- Clone, run `npm install`, then `npm run build`
