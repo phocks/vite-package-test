@@ -6,14 +6,16 @@ import typescript from '@rollup/plugin-typescript';
 
 export default defineConfig({
   build: {
-    lib: {
-      entry: resolve(__dirname, 'src/main.ts'),
-      name: 'Vite Test',
-      fileName: 'main'
-    },
+    outDir: '.aunty/build',
+    // lib: {
+    //   entry: resolve(__dirname, 'src/main.ts'),
+    //   name: 'Vite Test',
+    //   fileName: 'main'
+    // },
     rollupOptions: {
-      input: ['src/main.ts'],
+      input: ['src/index.ts'],
       output: {
+        entryFileNames: '[name].js',
         sourcemap: true
       },
       plugins: [typescript()]
